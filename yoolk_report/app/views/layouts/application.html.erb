@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yoolk Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body style="padding: 80px 0;">
+  <%= render "nav_bar"%>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1" >
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
